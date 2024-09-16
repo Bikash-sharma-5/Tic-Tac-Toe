@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+ 
+}
+body{
+    background-color: #e5e9f4;
+}
+
+nav{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    font-size: x-large;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    font-size: larger;
+    font-weight: 800;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    
+}
+.first{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns:  repeat(3,10vw);
+    --shadow: 
+    -.5rem -.5rem 1rem hsl(0 0% 100% / .75),
+    .5rem .5rem 1rem hsl(0 0% 50% / .5);
+  box-shadow: var(--shadow);
+  outline: none;  
+  
+}
+
+.first div{
+  border: 2.5px solid black;
+  font-size: 6vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.first div:hover{
+    box-shadow:
+    var(--shadow),
+    inset .5rem .5rem 1rem hsl(0 0% 50% / .5),
+    inset -.5rem -.5rem 1rem hsl(0 0% 100% / .75);
+  color: hsl(10 80% 50%);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.info{
+    font-weight: 600;
+}
+ button{
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    border: none;
+    font-weight: 600;
+  margin: 10px;
+  --shadow: 
+  -.5rem -.5rem 1rem hsl(0 0% 100% / .75),
+  .5rem .5rem 1rem hsl(0 0% 50% / .5);
+box-shadow: var(--shadow);
+outline: none;  
+}
+ button:hover{
+    transform: scale(1.05);
+    box-shadow:
+      var(--shadow),
+      inset .5rem .5rem 1rem hsl(0 0% 50% / .5),
+      inset -.5rem -.5rem 1rem hsl(0 0% 100% / .75);
+    color: hsl(10 80% 50%);
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bd-0{
+    border-bottom: 0;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+@media screen and (max-width:800px) {
+    .first{
+        display: grid;
+        grid-template-rows: repeat(3,15vw);
+        grid-template-columns:  repeat(3,15vw);
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(34, 33, 33, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .game{
+        width: 90%;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .sec{
+        padding-top: 40px;
+        font-size: 1.5rem;
+    }
+    
+    
+}
